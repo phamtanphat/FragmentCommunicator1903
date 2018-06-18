@@ -26,10 +26,10 @@ public class FragmentAndroid extends Fragment{
         btnAndroid = view.findViewById(R.id.buttonFragmentAndroid);
         edtAndroid = view.findViewById(R.id.edittextFragmentAndroid);
 
-        Bundle bundle = getArguments();
-        String chuoi = bundle.getString("chuoi");
-
-        Toast.makeText(getActivity(), chuoi, Toast.LENGTH_SHORT).show();
+//        Bundle bundle = getArguments();
+//        String chuoi = bundle.getString("chuoi");
+//
+//        Toast.makeText(getActivity(), chuoi, Toast.LENGTH_SHORT).show();
 
         return view;
     }

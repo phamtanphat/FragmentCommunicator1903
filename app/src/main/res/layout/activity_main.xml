@@ -19,5 +19,17 @@
         android:layout_below="@id/buttonMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <fragment
+            android:layout_marginTop="20dp"
+            android:name="com.ptp.phamtanphat.fragmentcommunicator1903.FragmentAndroid"
+            android:id="@+id/fragmentAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:layout_marginTop="50dp"
+            android:name="com.ptp.phamtanphat.fragmentcommunicator1903.FragmentiOS"
+            android:id="@+id/fragmentiOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </RelativeLayout>
