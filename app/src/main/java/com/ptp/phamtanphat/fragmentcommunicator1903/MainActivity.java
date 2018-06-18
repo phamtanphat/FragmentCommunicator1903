@@ -23,15 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btnMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Chi cap nhat view cho fragment
-                String dataupdate = "Chao Android";
 
-                FragmentAndroid fragmentAndroid =
-                        (FragmentAndroid) fragmentManager.findFragmentById(R.id.fragmentAndroid);
-
-                if (fragmentAndroid != null){
-                    fragmentAndroid.txtTitleAndroid.setText(dataupdate);
-                }
             }
         });
     }
@@ -46,5 +38,16 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentTransaction.add(R.id.linearlayout,fragmentAndroid);
         fragmentTransaction.commit();
+    }
+    public void CapnhatviewtuActivitychoFragment(){
+        //Chi cap nhat view cho fragment
+        String dataupdate = "Chao Android";
+
+        FragmentAndroid fragmentAndroid =
+                (FragmentAndroid) fragmentManager.findFragmentById(R.id.fragmentAndroid);
+
+        if (fragmentAndroid != null){
+            fragmentAndroid.txtTitleAndroid.setText(dataupdate);
+        }
     }
 }

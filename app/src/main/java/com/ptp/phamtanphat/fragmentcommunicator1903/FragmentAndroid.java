@@ -30,7 +30,21 @@ public class FragmentAndroid extends Fragment{
 //        String chuoi = bundle.getString("chuoi");
 //
 //        Toast.makeText(getActivity(), chuoi, Toast.LENGTH_SHORT).show();
+        //Chi cap nhat view cho activity
+
+        btnAndroid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
 
         return view;
+    }
+    public void GanDulieuTuFragmentChoActivity(){
+        String chuoi = "Chao activity";
+        Button btnMain = getActivity().findViewById(R.id.buttonMain);
+        btnMain.setText(chuoi);
     }
 }
