@@ -23,7 +23,15 @@ public class MainActivity extends AppCompatActivity {
         btnMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Chi cap nhat view cho fragment
+                String dataupdate = "Chao Android";
 
+                FragmentAndroid fragmentAndroid =
+                        (FragmentAndroid) fragmentManager.findFragmentById(R.id.fragmentAndroid);
+
+                if (fragmentAndroid != null){
+                    fragmentAndroid.txtTitleAndroid.setText(dataupdate);
+                }
             }
         });
     }
