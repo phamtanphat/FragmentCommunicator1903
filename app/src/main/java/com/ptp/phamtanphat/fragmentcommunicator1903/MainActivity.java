@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnMain;
     FragmentManager fragmentManager;
+    String[] mangchuoi = {"Quan 1" , "Quan 2" , "Quan 3"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         btnMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                FragmentAndroid fragmentAndroid = (FragmentAndroid) fragmentManager.findFragmentById(R.id.fragmentAndroid);
+                fragmentAndroid.NhanArray(mangchuoi);
             }
         });
     }
